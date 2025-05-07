@@ -67,13 +67,13 @@ void display()
 
 void binarySearch()
 {
-    char ulang
+    char ulang;
     do
     {
         cout << "\n===================================\n";
         cout << "       Pencarian Binary Search       \n";
-        cout << "\n===================================\n";
-        cout << "Masukkan element yang ingin dicari : \n";
+        cout << "===================================\n";
+        cout << "Masukkan element yang ingin dicari : ";
         cin >> x;
 
         int low = 0;
@@ -95,7 +95,7 @@ void binarySearch()
             {
                 low = mid + 1;
             }
-        } while (low <== high);
+        } while (low <= high);
 
         if (low > high)
         {
